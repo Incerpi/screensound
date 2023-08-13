@@ -3,8 +3,6 @@
 using System.Net.Http.Headers;
 using Microsoft.VisualBasic;
 
-//List<string> listaDeBandas = new List<string> {"U2", "The Beatles", "Calypso"};
-
 Dictionary<string, List<int>> bandasRegistradas = new Dictionary<string, List<int>>(); 
 
 bandasRegistradas.Add("Linkin Park", new List<int>{ 10, 8, 6});
@@ -74,10 +72,6 @@ void MostrarBandas(){
 
     Console.Clear();
     ExibirTitulo("LISTA DE BANDAS REGISTRADAS");
-
-    //for (int i = 0; i < listaDeBandas.Count; i++){
-    //    Console.WriteLine($"{i+1}: {listaDeBandas[i]}");
-    //}
 
     foreach (string banda in bandasRegistradas.Keys){
         Console.WriteLine($"{banda}");
@@ -161,34 +155,4 @@ void ExibirTitulo(string titulo){
 }
 
  ExibirMenu();
-
-//Dictionary<string, List<int>> vendasCarros = new Dictionary<string, List<int>> {
-//    { "Bugatti Veyron", new List<int> { 10, 15, 12, 8, 5 } },
-//    { "Koenigsegg Agera RS", new List<int> { 2, 3, 5, 6, 7 } },
-//    { "Lamborghini Aventador", new List<int> { 20, 18, 22, 24, 16 } },
-//    { "Pagani Huayra", new List<int> { 4, 5, 6, 5, 4 } },
-//    { "Ferrari LaFerrari", new List<int> { 7, 6, 5, 8, 10 } }
-//};
-
-//int somaTotal = 0;
-//int media = 0;
-
-// acessar os valores das chaves
-// calcular a média dos valores
-// exibir a média na tela
-
-
-//Console.Write("Digite o nome do carro: ");
-//string nomeDoCarro = Console.ReadLine()!;
-
-//if (vendasCarros.ContainsKey(nomeDoCarro)){
-//    for (int i = 0; i < vendasCarros.Count; i++) {
-//        somaTotal += vendasCarros[nomeDoCarro][i];    
-//    }
-
-//media = somaTotal / vendasCarros.Count;
-
-//Console.WriteLine($"A média do carro {nomeDoCarro} é {media}");
-
-//}
 
